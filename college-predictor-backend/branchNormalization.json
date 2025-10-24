@@ -1,0 +1,248 @@
+{
+  "originalCount": 132,
+  "normalizedCount": 40,
+  "mappings": {
+    "computer": "Computer Engineering",
+    "computer engineering": "Computer Engineering",
+    "computer science": "Computer Science and Engineering",
+    "computer science and engineering": "Computer Science and Engineering",
+    "computer science & engineering": "Computer Science and Engineering",
+    "cse": "Computer Science and Engineering",
+    "cs": "Computer Science and Engineering",
+    "comp": "Computer Engineering",
+    "information technology": "Information Technology",
+    "it": "Information Technology",
+    "electronics": "Electronics Engineering",
+    "electronics engineering": "Electronics Engineering",
+    "electronics and telecommunication": "Electronics and Telecommunication Engineering",
+    "electronics and telecommunication engineering": "Electronics and Telecommunication Engineering",
+    "ece": "Electronics and Communication Engineering",
+    "electronics and communication": "Electronics and Communication Engineering",
+    "electronics and communication engineering": "Electronics and Communication Engineering",
+    "extc": "Electronics and Telecommunication Engineering",
+    "electrical": "Electrical Engineering",
+    "electrical engineering": "Electrical Engineering",
+    "mechanical": "Mechanical Engineering",
+    "mechanical engineering": "Mechanical Engineering",
+    "civil": "Civil Engineering",
+    "civil engineering": "Civil Engineering",
+    "chemical": "Chemical Engineering",
+    "chemical engineering": "Chemical Engineering",
+    "artificial intelligence": "Artificial Intelligence and Data Science",
+    "ai": "Artificial Intelligence and Data Science",
+    "artificial intelligence and data science": "Artificial Intelligence and Data Science",
+    "ai and data science": "Artificial Intelligence and Data Science",
+    "ai & data science": "Artificial Intelligence and Data Science",
+    "data science": "Data Science",
+    "bio technology": "Bio Technology",
+    "biotechnology": "Bio Technology",
+    "instrumentation": "Instrumentation Engineering",
+    "instrumentation engineering": "Instrumentation Engineering",
+    "instrumentation and control": "Instrumentation and Control Engineering",
+    "instrumentation and control engineering": "Instrumentation and Control Engineering",
+    "automobile": "Automobile Engineering",
+    "automobile engineering": "Automobile Engineering",
+    "aeronautical": "Aeronautical Engineering",
+    "aeronautical engineering": "Aeronautical Engineering",
+    "production": "Production Engineering",
+    "production engineering": "Production Engineering",
+    "industrial": "Industrial Engineering",
+    "industrial engineering": "Industrial Engineering",
+    "textile": "Textile Engineering",
+    "textile engineering": "Textile Engineering",
+    "mining": "Mining Engineering",
+    "mining engineering": "Mining Engineering",
+    "metallurgy": "Metallurgical Engineering",
+    "metallurgical": "Metallurgical Engineering",
+    "metallurgical engineering": "Metallurgical Engineering",
+    "biomedical": "Bio Medical Engineering",
+    "bio medical": "Bio Medical Engineering",
+    "bio medical engineering": "Bio Medical Engineering",
+    "biomedical engineering": "Bio Medical Engineering",
+    "petro chemical": "Petro Chemical Engineering",
+    "petro chemical engineering": "Petro Chemical Engineering",
+    "robotics": "Robotics Engineering",
+    "automation and robotics": "Automation and Robotics",
+    "textile chemistry": "Textile Chemistry",
+    "polymer engineering": "Polymer Engineering",
+    "plastic technology": "Plastic Technology",
+    "ceramic engineering": "Ceramic Engineering",
+    "marine engineering": "Marine Engineering",
+    "environmental engineering": "Environmental Engineering",
+    "fire engineering": "Fire Engineering",
+    "food technology": "Food Technology",
+    "printing technology": "Printing Technology",
+    "pharmaceutical chemistry": "Pharmaceutical Chemistry",
+    "pharmaceutical technology": "Pharmaceutical Technology",
+    "architecture": "Architecture",
+    "interior design": "Interior Design",
+    "fashion design": "Fashion Design",
+    "applied arts": "Applied Arts",
+    "hotel management": "Hotel Management & Catering Technology",
+    "hotel management & catering technology": "Hotel Management & Catering Technology",
+    "mca": "Master of Computer Applications",
+    "mba": "Master of Business Administration"
+  },
+  "normalizedBranches": [
+    {
+      "branch": "Computer Engineering",
+      "count": 482
+    },
+    {
+      "branch": "Computer Science and Engineering",
+      "count": 304
+    },
+    {
+      "branch": "Mechanical Engineering",
+      "count": 290
+    },
+    {
+      "branch": "Civil Engineering",
+      "count": 246
+    },
+    {
+      "branch": "Electrical Engineering",
+      "count": 180
+    },
+    {
+      "branch": "Information Technology",
+      "count": 134
+    },
+    {
+      "branch": "Artificial Intelligence and Data Science",
+      "count": 121
+    },
+    {
+      "branch": "Chemical Engineering",
+      "count": 37
+    },
+    {
+      "branch": "Instrumentation Engineering",
+      "count": 17
+    },
+    {
+      "branch": "Food Technology",
+      "count": 9
+    },
+    {
+      "branch": "Textile Engineering",
+      "count": 8
+    },
+    {
+      "branch": "Automobile Engineering",
+      "count": 6
+    },
+    {
+      "branch": "Data Science",
+      "count": 5
+    },
+    {
+      "branch": "Bio Technology",
+      "count": 4
+    },
+    {
+      "branch": "Bio Medical Engineering",
+      "count": 4
+    },
+    {
+      "branch": "Industrial Engineering",
+      "count": 3
+    },
+    {
+      "branch": "Aeronautical Engineering",
+      "count": 3
+    },
+    {
+      "branch": "Production Engineering",
+      "count": 3
+    },
+    {
+      "branch": "Mining Engineering",
+      "count": 2
+    },
+    {
+      "branch": "Polymer Engineering",
+      "count": 2
+    },
+    {
+      "branch": "Paper and Pulp Technology",
+      "count": 2
+    },
+    {
+      "branch": "Surface Coating Technology",
+      "count": 2
+    },
+    {
+      "branch": "Plastic Technology",
+      "count": 1
+    },
+    {
+      "branch": "Oil Fats and Waxes Technology",
+      "count": 1
+    },
+    {
+      "branch": "Internet of Things (IoT)",
+      "count": 1
+    },
+    {
+      "branch": "Agricultural Engineering",
+      "count": 1
+    },
+    {
+      "branch": "Data Engineering",
+      "count": 1
+    },
+    {
+      "branch": "Fire Engineering",
+      "count": 1
+    },
+    {
+      "branch": "Dyestuff Technology",
+      "count": 1
+    },
+    {
+      "branch": "Pharmaceuticals Chemistry and Technology",
+      "count": 1
+    },
+    {
+      "branch": "Food Engineering and Technology",
+      "count": 1
+    },
+    {
+      "branch": "Structural Engineering",
+      "count": 1
+    },
+    {
+      "branch": "VLSI",
+      "count": 1
+    },
+    {
+      "branch": "5G",
+      "count": 1
+    },
+    {
+      "branch": "Plastic and Polymer Technology",
+      "count": 1
+    },
+    {
+      "branch": "Oil Technology",
+      "count": 1
+    },
+    {
+      "branch": "Fashion Technology",
+      "count": 1
+    },
+    {
+      "branch": "Manufacturing Science and Engineering",
+      "count": 1
+    },
+    {
+      "branch": "Metallurgical Engineering",
+      "count": 1
+    },
+    {
+      "branch": "Printing Technology",
+      "count": 1
+    }
+  ]
+}
