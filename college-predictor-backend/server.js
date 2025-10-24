@@ -60,10 +60,16 @@ app.use("/api/contact", contactRoutes);
 // Backward compatibility route
 app.use("/users", userRoutes);
 // DB Connection with better error handling
+let isDbConnected = false; // Cache connection state for serverless instances
+
 const connectDB = async () => {
   try {
+    if (isDbConnected && mongoose.connection.readyState === 1) {
+      return;
+    }
     console.log("Attempting to connect to MongoDB...");
     await mongoose.connect(process.env.MONGO_URI);
+    isDbConnected = mongoose.connection.readyState === 1;
     console.log("✅ Connected to MongoDB successfully!");
   } catch (err) {
     console.error("❌ MongoDB connection error:", err.message);
@@ -74,20 +80,23 @@ const connectDB = async () => {
     console.log("   - Navigate to Network Access");
     console.log("   - Add your current IP address or use 0.0.0.0/0 for all IPs");
     console.log("3. Verify your MONGO_URI environment variable");
-    
-    // For production, exit on connection failure
-    if (process.env.NODE_ENV === 'production') {
+
+    // In serverless (Vercel), do NOT exit the process
+    if (process.env.NODE_ENV === 'production' && !process.env.VERCEL) {
       console.error('Failed to connect to MongoDB in production. Exiting...');
       process.exit(1);
     }
-    
+
     // Retry connection after 5 seconds in development
-    console.log("\n🔄 Retrying connection in 5 seconds...");
-    setTimeout(() => {
-      connectDB();
-    }, 5000);
+    if (process.env.NODE_ENV !== 'production') {
+      console.log("\n🔄 Retrying connection in 5 seconds...");
+      setTimeout(() => {
+        connectDB();
+      }, 5000);
+    }
   }
 };
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
