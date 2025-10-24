@@ -13,7 +13,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)](https://vercel.com/)
 
-[Live Demo](https://colleges-predictor.vercel.app) • [Report Bug](https://github.com/yourusername/college-predictor/issues) • [Request Feature](https://github.com/yourusername/college-predictor/issues)
+[Live Demo](https://colleges-predictorr.vercel.app) • [Report Bug](https://github.com/yourusername/college-predictor/issues) • [Request Feature](https://github.com/yourusername/college-predictor/issues)
 
 </div>
 
@@ -646,15 +646,15 @@ Contributions are what make the open-source community such an amazing place to l
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/saurabhsawant">
-        <img src="https://github.com/saurabhsawant.png" width="100px;" alt="Saurabh Sawant"/><br />
+      <a href="https://github.com/saurrabhs">
+        <img src="https://github.com/sarrabhs.png" width="100px;" alt="Saurabh Sawant"/><br />
         <sub><b>Saurabh Sawant</b></sub>
       </a><br />
-      <sub>Lead Developer</sub>
+      <sub>Full Stack Developer</sub>
     </td>
     <td align="center">
-      <a href="https://github.com/yashshinde">
-        <img src="https://github.com/yashshinde.png" width="100px;" alt="Yash Shinde"/><br />
+      <a href="https://github.com/yash-shinde-018">
+        <img src="https://github.com/yash-shinde-018.png" width="100px;" alt="Yash Shinde"/><br />
         <sub><b>Yash Shinde</b></sub>
       </a><br />
       <sub>Full Stack Developer</sub>
@@ -673,9 +673,7 @@ Contributions are what make the open-source community such an amazing place to l
 
 ### Connect With Us
 
-- 📧 Email: saurabhsawant@example.com
-- 💼 LinkedIn: [Saurabh Sawant](https://linkedin.com/in/saurabhsawant)
-- 🐦 Twitter: [@saurabhsawant](https://twitter.com/saurabhsawant)
+- 📧 Email: collegespredictor@gmail.com
 
 ---
 
@@ -708,6 +706,7 @@ For support, email saurabhsawant@example.com or create an issue in this reposito
 
 <div align="center">
 
-**Made with ❤️ by Saurabh Sawant, Yash Shinde & Pratik Jedhe**
+**Made by Saurabh Sawant, Yash Shinde & Pratik Jedhe**
 
 </div>
+
