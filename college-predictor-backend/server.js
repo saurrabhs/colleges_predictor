@@ -117,7 +117,10 @@ const startServer = () => {
 
 // Connect to database and start server
 connectDB();
-startServer();
+// Only start a local server if not running on Vercel serverless
+if (!process.env.VERCEL) {
+  startServer();
+}
 
 // Graceful shutdown
 process.on('SIGTERM', () => {
