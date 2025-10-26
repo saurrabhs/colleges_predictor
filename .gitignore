@@ -1,0 +1,15 @@
+# Root-level gitignore
+node_modules/
+.DS_Store
+*.log
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#grad)" />
+  
+  <!-- Graduation Cap -->
+  <!-- Cap base (mortarboard) -->
+  <path d="M 50 30 L 70 38 L 70 42 L 50 50 L 30 42 L 30 38 Z" fill="#ffffff" />
+  
+  <!-- Cap top -->
+  <polygon points="25,40 50,30 75,40 50,48" fill="#ffffff" opacity="0.9" />
+  
+  <!-- Tassel -->
+  <line x1="73" y1="38" x2="78" y2="33" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="78" cy="31" r="2" fill="#FFD700" />
+  
+  <!-- Book/Education symbol -->
+  <rect x="42" y="52" width="16" height="20" fill="#ffffff" rx="1" />
+  <line x1="42" y1="57" x2="58" y2="57" stroke="url(#grad)" stroke-width="1" />
+  <line x1="42" y1="62" x2="58" y2="62" stroke="url(#grad)" stroke-width="1" />
+  <line x1="42" y1="67" x2="58" y2="67" stroke="url(#grad)" stroke-width="1" />
+  <line x1="50" y1="52" x2="50" y2="72" stroke="url(#grad)" stroke-width="1" />
+  
+  <!-- Decorative elements -->
+  <circle cx="35" cy="60" r="2" fill="#ffffff" opacity="0.6" />
+  <circle cx="65" cy="60" r="2" fill="#ffffff" opacity="0.6" />
+  <circle cx="30" cy="68" r="1.5" fill="#ffffff" opacity="0.4" />
+  <circle cx="70" cy="68" r="1.5" fill="#ffffff" opacity="0.4" />
+</svg>
