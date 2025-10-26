@@ -4,7 +4,7 @@
 
 ![College Predictor Banner](https://img.shields.io/badge/College-Predictor-blue?style=for-the-badge&logo=graduation-cap)
 
-**An intelligent platform to predict engineering colleges based on your entrance exam ranks**
+**An intelligent platform to predict engineering colleges based on your entrance exam rank**
 
 [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
@@ -60,12 +60,14 @@
 ## ✨ Features
 
 ### 🔐 Authentication & Security
+
 - User registration with email verification (OTP)
 - Secure login with JWT tokens
 - Password reset functionality
 - Protected routes for authenticated users
 
 ### 🎯 College Prediction
+
 - Predict colleges based on:
   - Entrance exam rank
   - Category (Open, OBC, SC, ST, etc.)
@@ -76,12 +78,14 @@
 - Detailed college information with cutoff trends
 
 ### 🤖 AI Counselling
+
 - Interactive chat with AI counsellor powered by Gemini AI
 - Multiple counselling sessions
 - Context-aware responses
 - Session history and management
 
 ### 📚 College Management
+
 - Browse complete college database
 - Add colleges to personal shortlist
 - Rank and reorder saved colleges
@@ -89,12 +93,14 @@
 - Export college list (planned feature)
 
 ### 📞 Contact & Support
+
 - Contact form with email notifications
 - Branch guide for course information
 - About and FAQ sections
 - Terms of Service & Privacy Policy
 
 ### 🎨 User Experience
+
 - Modern, intuitive UI with Tailwind CSS
 - Dark mode support (planned)
 - Mobile-responsive design
@@ -106,6 +112,7 @@
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - **React 18** - UI library
 - **Vite** - Build tool and dev server
 - **Tailwind CSS** - Utility-first CSS framework
@@ -115,6 +122,7 @@
 - **Lucide React** - Icon library
 
 ### Backend
+
 - **Node.js** - Runtime environment
 - **Express.js** - Web application framework
 - **MongoDB** - NoSQL database
@@ -126,6 +134,7 @@
 - **express-rate-limit** - API rate limiting
 
 ### DevOps & Deployment
+
 - **Vercel** - Frontend & Backend hosting
 - **MongoDB Atlas** - Database hosting
 - **Git** - Version control
@@ -143,14 +152,14 @@ graph TB
     C -->|Database Queries| E[MongoDB Atlas]
     C -->|AI Requests| F[Google Gemini AI]
     C -->|Email Service| G[SMTP Server]
-    
+
     subgraph Frontend
         B
         H[React Router]
         I[Context API]
         J[Axios Interceptors]
     end
-    
+
     subgraph Backend
         C
         K[Routes]
@@ -158,7 +167,7 @@ graph TB
         M[Models]
         D
     end
-    
+
     subgraph Database
         E
         N[Users Collection]
@@ -171,11 +180,13 @@ graph TB
 ### Request Flow
 
 1. **User Authentication**
+
    ```
    Client → Login/Register → Backend → Verify → Generate JWT → Store Token → Authenticated Access
    ```
 
 2. **College Prediction**
+
    ```
    Client → Submit Criteria → Backend → Query Database → Apply Filters → Return Results → Display
    ```
@@ -283,16 +294,19 @@ College_Predictor/
 Before you begin, ensure you have the following installed:
 
 - **Node.js** (v16 or higher)
+
   ```bash
   node --version
   ```
 
 - **npm** (v8 or higher)
+
   ```bash
   npm --version
   ```
 
 - **MongoDB** (Local installation or Atlas account)
+
   - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (Recommended)
 
 - **Git**
@@ -303,12 +317,14 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/college-predictor.git
    cd college-predictor
    ```
 
 2. **Install Backend Dependencies**
+
    ```bash
    cd college-predictor-backend
    npm install
@@ -350,12 +366,14 @@ NODE_ENV=development
 
 **Getting API Keys:**
 
-- **MongoDB Atlas**: 
+- **MongoDB Atlas**:
+
   1. Create account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
   2. Create a cluster → Get connection string
   3. Whitelist IP: `0.0.0.0/0` (for development)
 
 - **Gemini API**:
+
   1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
   2. Create API key
 
@@ -386,17 +404,21 @@ VITE_API_URL=https://your-backend-url.vercel.app/api
 ### Development Mode
 
 1. **Start Backend Server**
+
    ```bash
    cd college-predictor-backend
    npm start
    ```
+
    Backend runs on: `http://localhost:5000`
 
 2. **Start Frontend Development Server**
+
    ```bash
    cd college-predictor-frontend
    npm run dev
    ```
+
    Frontend runs on: `http://localhost:5173`
 
 3. **Access the Application**
@@ -408,6 +430,7 @@ VITE_API_URL=https://your-backend-url.vercel.app/api
 ### Production Build
 
 **Frontend:**
+
 ```bash
 cd college-predictor-frontend
 npm run build
@@ -415,6 +438,7 @@ npm run preview  # Preview production build
 ```
 
 **Backend:**
+
 ```bash
 cd college-predictor-backend
 npm start  # Uses NODE_ENV=production
@@ -425,6 +449,7 @@ npm start  # Uses NODE_ENV=production
 ## 📡 API Documentation
 
 ### Base URL
+
 ```
 Development: http://localhost:5000/api
 Production: https://your-backend-url.vercel.app/api
@@ -434,51 +459,52 @@ Production: https://your-backend-url.vercel.app/api
 
 #### Authentication
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/users/register` | Register new user | No |
-| POST | `/users/verify-otp` | Verify email OTP | No |
-| POST | `/users/login` | User login | No |
-| POST | `/users/forgot-password` | Request password reset | No |
-| POST | `/users/reset-password` | Reset password with OTP | No |
+| Method | Endpoint                 | Description             | Auth Required |
+| ------ | ------------------------ | ----------------------- | ------------- |
+| POST   | `/users/register`        | Register new user       | No            |
+| POST   | `/users/verify-otp`      | Verify email OTP        | No            |
+| POST   | `/users/login`           | User login              | No            |
+| POST   | `/users/forgot-password` | Request password reset  | No            |
+| POST   | `/users/reset-password`  | Reset password with OTP | No            |
 
 #### Colleges
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| GET | `/colleges` | Get all colleges (paginated) | No |
-| POST | `/colleges/predict` | Predict colleges based on criteria | Yes |
-| GET | `/colleges/:id` | Get college by ID | No |
+| Method | Endpoint            | Description                        | Auth Required |
+| ------ | ------------------- | ---------------------------------- | ------------- |
+| GET    | `/colleges`         | Get all colleges (paginated)       | No            |
+| POST   | `/colleges/predict` | Predict colleges based on criteria | Yes           |
+| GET    | `/colleges/:id`     | Get college by ID                  | No            |
 
 #### College List
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| GET | `/college-list` | Get user's saved colleges | Yes |
-| POST | `/college-list/add` | Add college to list | Yes |
-| DELETE | `/college-list/remove/:collegeId/:branch` | Remove college | Yes |
-| PUT | `/college-list/rank` | Update college ranking | Yes |
-| DELETE | `/college-list/clear` | Clear entire list | Yes |
+| Method | Endpoint                                  | Description               | Auth Required |
+| ------ | ----------------------------------------- | ------------------------- | ------------- |
+| GET    | `/college-list`                           | Get user's saved colleges | Yes           |
+| POST   | `/college-list/add`                       | Add college to list       | Yes           |
+| DELETE | `/college-list/remove/:collegeId/:branch` | Remove college            | Yes           |
+| PUT    | `/college-list/rank`                      | Update college ranking    | Yes           |
+| DELETE | `/college-list/clear`                     | Clear entire list         | Yes           |
 
 #### AI Counselling
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/counselling/chat` | Send message to AI | Yes |
-| GET | `/counselling/sessions` | Get all sessions | Yes |
-| GET | `/counselling/sessions/:id` | Get specific session | Yes |
-| DELETE | `/counselling/sessions/:id` | Delete session | Yes |
-| DELETE | `/counselling/sessions/:id/clear` | Clear session messages | Yes |
+| Method | Endpoint                          | Description            | Auth Required |
+| ------ | --------------------------------- | ---------------------- | ------------- |
+| POST   | `/counselling/chat`               | Send message to AI     | Yes           |
+| GET    | `/counselling/sessions`           | Get all sessions       | Yes           |
+| GET    | `/counselling/sessions/:id`       | Get specific session   | Yes           |
+| DELETE | `/counselling/sessions/:id`       | Delete session         | Yes           |
+| DELETE | `/counselling/sessions/:id/clear` | Clear session messages | Yes           |
 
 #### Contact
 
-| Method | Endpoint | Description | Auth Required |
-|--------|----------|-------------|---------------|
-| POST | `/contact` | Send contact form | No |
+| Method | Endpoint   | Description       | Auth Required |
+| ------ | ---------- | ----------------- | ------------- |
+| POST   | `/contact` | Send contact form | No            |
 
 ### Example Request
 
 **Predict Colleges:**
+
 ```javascript
 POST /api/colleges/predict
 Content-Type: application/json
@@ -497,6 +523,7 @@ Authorization: Bearer <token>
 ```
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -519,6 +546,7 @@ Authorization: Bearer <token>
 #### Backend Deployment
 
 1. **Push code to GitHub**
+
    ```bash
    git add .
    git commit -m "Initial commit"
@@ -526,6 +554,7 @@ Authorization: Bearer <token>
    ```
 
 2. **Import to Vercel**
+
    - Go to [vercel.com](https://vercel.com)
    - Click "New Project"
    - Import your GitHub repository
@@ -536,6 +565,7 @@ Authorization: Bearer <token>
      - **Output Directory**: (leave empty)
 
 3. **Add Environment Variables**
+
    - Go to Project Settings → Environment Variables
    - Add all backend environment variables
    - Set `NODE_ENV=production`
@@ -547,12 +577,14 @@ Authorization: Bearer <token>
 #### Frontend Deployment
 
 1. **Update Production ENV**
+
    ```env
    # college-predictor-frontend/.env.production
    VITE_API_URL=https://your-backend.vercel.app/api
    ```
 
 2. **Import to Vercel**
+
    - Create new project in Vercel
    - Configure:
      - **Root Directory**: `college-predictor-frontend`
@@ -561,6 +593,7 @@ Authorization: Bearer <token>
      - **Output Directory**: `dist`
 
 3. **Add Environment Variable**
+
    ```
    VITE_API_URL=https://your-backend.vercel.app/api
    ```
@@ -580,15 +613,19 @@ Authorization: Bearer <token>
 <div align="center">
 
 ### Home Page
+
 ![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
 
 ### College Prediction
+
 ![Prediction](https://via.placeholder.com/800x400?text=College+Prediction)
 
 ### AI Counselling
+
 ![AI Chat](https://via.placeholder.com/800x400?text=AI+Counselling)
 
 ### Dashboard
+
 ![Dashboard](https://via.placeholder.com/800x400?text=User+Dashboard)
 
 </div>
@@ -709,4 +746,3 @@ For support, email saurabhsawant@example.com or create an issue in this reposito
 **Made by Saurabh Sawant, Yash Shinde & Pratik Jedhe**
 
 </div>
-
