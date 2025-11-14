@@ -103,7 +103,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex justify-center space-x-4">
               <Link
-                to={isAuthenticated ? "/dashboard" : "/register"}
+                to={isAuthenticated ? "/dashboard" : "/predict"}
                 className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transform hover:scale-105 transition-transform"
               >
                 Start Prediction <ArrowRightIcon className="ml-2 h-5 w-5" />
